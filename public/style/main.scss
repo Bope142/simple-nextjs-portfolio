@@ -1,5 +1,5 @@
 @import "./variable.scss";
-
+@import "./reset.scss";
 html {
   scroll-behavior: smooth;
   user-select: none;
@@ -13,22 +13,30 @@ body {
   font-family: $fontRegular;
   position: relative;
   height: 100vh;
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  overflow: hidden;
+  overflow-x: hidden;
+  // -ms-overflow-style: none;
+  // /* IE and Edge */
+  // scrollbar-width: none;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
+// body::-webkit-scrollbar {
+//   display: none;
+// }
 
-.main {
+.container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
-  background: red;
+  background: rgb(238, 237, 237);
+  position: relative;
+  gap: 25px;
+
+  height: 100vh;
+}
+
+.page-view {
+  background: transparent;
+  margin-left: 380px;
+  padding: $padding;
+  overflow-x: hidden;
+  width: 100%;
+  height: auto;
 }

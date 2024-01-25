@@ -1,22 +1,27 @@
 /*Export fonts */
 @font-face {
-  font-family: "Oswald-Bold";
-  src: url("../fonts/Oswald-Bold.ttf");
+  font-family: "Poppins-Bold";
+  src: url("../fonts/Poppins-Bold.ttf");
 }
 
 @font-face {
-  font-family: "Oswald-Medium";
-  src: url("../fonts/Oswald-Medium.ttf");
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Oswald-Regular";
-  src: url("../fonts/Oswald-Regular.ttf");
+  font-family: "Poppins-Light";
+  src: url("../fonts/Poppins-Light.ttf");
 }
 
 /*fonts varialble*/
-$fontBold: "Oswald-Bold", sans-serif;
+$fontBold: "Poppins-Bold", sans-serif;
 
-$fontMedium: "Oswald-Medium", sans-serif;
+$fontMedium: "Poppins-Medium", sans-serif;
 
-$fontRegular: "Oswald-Regular", sans-serif;
+$fontRegular: "Poppins-Regular", sans-serif;
+
+$padding: 80px;
+
+$neutral1: rgba(0, 0, 0, 0.378);
+$neutral2: #080808;

@@ -1,0 +1,69 @@
+@import "../../public/style/reset.scss";
+@import "../../public/style/variable.scss";
+
+.navbar-menu-container {
+  position: fixed;
+  background: white;
+  height: 100%;
+  //   width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 35px;
+  padding: 50px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  & h1 {
+    font-family: $fontBold;
+    font-size: 2rem;
+  }
+
+  & .copyright-section-nav {
+    margin-top: auto;
+    margin-bottom: $padding + 50;
+    gap: 0;
+    & .text-copy {
+      font-family: $fontRegular;
+      font-size: 0.9rem;
+      color: $neutral1;
+      transition: all 0.3s linear;
+    }
+    & span {
+      font-size: 0.9rem;
+      color: $neutral1;
+      opacity: 1;
+      & a {
+        font-family: $fontRegular;
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: $neutral2 !important;
+        opacity: 0.8;
+        transition: all 0.3s linear;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.activeLink {
+  color: $neutral2 !important;
+}
+
+.navbar__nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  & .nav-item {
+    font-family: $fontRegular;
+    text-decoration: none;
+    font-size: 1rem;
+    color: $neutral1;
+    transition: all 0.3s linear;
+    &:hover {
+      color: $neutral2 !important;
+    }
+  }
+}

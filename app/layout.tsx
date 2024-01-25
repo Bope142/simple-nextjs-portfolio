@@ -1,4 +1,6 @@
+import NavBar from "@/components/navbar/NavBar";
 import type { Metadata } from "next";
+import "../public/style/main.scss";
 
 export const metadata: Metadata = {
   title: "Mon Simple Next.js Portfolio",
@@ -17,7 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <meta charSet="utf-8" />
-      <body>{children}</body>
+      <body>
+        <main className="container">
+          <NavBar></NavBar>
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
