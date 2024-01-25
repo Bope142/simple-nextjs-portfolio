@@ -1,0 +1,34 @@
+@import "./variable.scss";
+
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+* {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: $fontRegular;
+  position: relative;
+  height: 100vh;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  background: red;
+}

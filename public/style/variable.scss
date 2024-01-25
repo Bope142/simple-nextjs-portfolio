@@ -1,0 +1,22 @@
+/*Export fonts */
+@font-face {
+  font-family: "Oswald-Bold";
+  src: url("../fonts/Oswald-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Oswald-Medium";
+  src: url("../fonts/Oswald-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("../fonts/Oswald-Regular.ttf");
+}
+
+/*fonts varialble*/
+$fontBold: "Oswald-Bold", sans-serif;
+
+$fontMedium: "Oswald-Medium", sans-serif;
+
+$fontRegular: "Oswald-Regular", sans-serif;
