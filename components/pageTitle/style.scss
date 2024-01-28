@@ -1,0 +1,44 @@
+@import "../../public/style/reset.scss";
+@import "../../public/style/variable.scss";
+
+.page__header__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-bottom: 50px;
+  flex: none;
+  margin-left: $padding;
+  & .path-url {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    padding: 20px 25px;
+    border-radius: 2px;
+    background: rgba($neutral2, 0.04);
+    align-self: flex-start;
+    & .link-home {
+      font-size: 0.8rem;
+      text-decoration: none;
+      color: $neutral2;
+      font-family: $fontRegular;
+    }
+    & .icons {
+      height: 10px;
+      width: 10px;
+    }
+    & .current-page {
+      font-size: 0.8rem;
+      text-decoration: none;
+      color: $neutral2;
+      opacity: 0.5;
+      font-family: $fontRegular;
+    }
+  }
+}
+
+.page-title {
+  font-family: $fontBold;
+  font-size: 2rem;
+  color: $neutral2;
+  text-transform: uppercase;
+}

@@ -4,7 +4,9 @@
 #homePageContainer {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 55px;
+  margin-left: 500px;
+  padding: $padding;
 }
 
 .cover-profil {
@@ -28,16 +30,16 @@
 .profil-infos {
   display: flex;
   flex-direction: column;
-  row-gap: 0px;
+  row-gap: 20px;
   & h2 {
     font-family: $fontBold;
     font-size: 3rem;
     color: $neutral2;
-    transform: translateY(40%);
   }
   & p {
     font-size: 1rem;
     line-height: 1.8rem;
+    font-family: $fontRegular;
   }
   & .link-social-media {
     display: flex;

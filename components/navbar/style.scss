@@ -5,39 +5,41 @@
   position: fixed;
   background: white;
   height: 100%;
-  //   width: 200px;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  row-gap: 35px;
-  padding: 50px;
+  justify-content: center;
+  row-gap: 50px;
+  padding: 100px;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
-    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  z-index: 500;
+  // box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
   & h1 {
     font-family: $fontBold;
-    font-size: 0.8rem;
+    font-size: 2rem;
     color: $neutral2;
   }
 
   & .copyright-section-nav {
-    margin-top: auto;
-    margin-bottom: $padding + 50;
-    gap: 0;
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
     & .text-copy {
       font-family: $fontRegular;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       color: $neutral1;
       transition: all 0.3s linear;
     }
     & span {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       color: $neutral1;
       opacity: 1;
+      font-family: $fontRegular;
       & a {
         font-family: $fontRegular;
         text-decoration: none;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         color: $neutral2 !important;
         opacity: 0.8;
         transition: all 0.3s linear;
@@ -56,13 +58,15 @@
 .navbar__nav {
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
+  row-gap: 25px;
+
   & .nav-item {
     font-family: $fontRegular;
     text-decoration: none;
     font-size: 1rem;
     color: $neutral1;
     transition: all 0.3s linear;
+    text-transform: uppercase;
     &:hover {
       color: $neutral2 !important;
     }

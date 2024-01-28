@@ -25,7 +25,7 @@ body {
 
 .container {
   display: flex;
-  background: rgb(243, 240, 240);
+  background: #faf9f9;
   position: relative;
   gap: 25px;
 
@@ -34,8 +34,7 @@ body {
 
 .page-view {
   background: transparent;
-  margin-left: 350px;
-  padding: $padding;
+
   overflow-x: hidden;
   width: 100%;
   height: auto;

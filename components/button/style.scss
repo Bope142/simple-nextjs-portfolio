@@ -1,0 +1,33 @@
+@import "../../public/style/reset.scss";
+@import "../../public/style/variable.scss";
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 20px 30px;
+  font-family: $fontRegular;
+  font-size: 0.9rem;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    background: rgba(white, 0.2);
+    transition: all 0.3s linear;
+    opacity: 0;
+  }
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.btn-black {
+  background: black;
+  color: white;
+}
