@@ -7,9 +7,11 @@ import profilUser from "../../public/images/profil-1.jpg";
 import Button from "@/components/button/Button";
 import TitleBox from "@/components/titleBox/TitleBox";
 import ProgressBar from "@/components/progressbar/ProgressBar";
+import { typesDataTimeLine as dataTimeline } from "@/types/timeline";
+import TimeLine from "@/components/timeline/TimeLine";
 const MyInfosProfile = () => {
   return (
-    <div className="my-profil">
+    <div className="my-profil section-page">
       <div className="content-profil-pic">
         <Image src={profilUser} alt="ma photo de profil" />
       </div>
@@ -48,7 +50,7 @@ const SkillsSections = () => {
     { title: "Sécurité Informatique", value: 75 },
   ];
   return (
-    <section className="skills__section">
+    <section className="skills__section section-page">
       <div className="programming__skills">
         <TitleBox title="Compétences Informatique" />
         <div className="skills__hard">
@@ -68,6 +70,98 @@ const SkillsSections = () => {
     </section>
   );
 };
+const SectionEductaion = () => {
+  const education: dataTimeline[] = [
+    {
+      date_start: "2022",
+      date_end: "2023",
+      title: "Licence en science informatique",
+      description: "Orientation en télécommunication et administration réseaux",
+    },
+    {
+      date_start: "2020",
+      date_end: "2021",
+      title: "Graduant en science informatique",
+      description: "Orientation en informatique industrielle",
+    },
+    {
+      date_start: "2020",
+      date_end: "2021",
+      title: "Graduant en science informatique",
+      description: "Orientation en informatique industrielle",
+    },
+  ];
+  const experience: dataTimeline[] = [
+    {
+      date_start: "2022",
+      date_end: "2023",
+      title: "Développeur polyvalent et créateur tech",
+      description:
+        "Développement et design UI/UX pour des solutions innovantes",
+    },
+    {
+      date_start: "2022",
+      date_end: "2023",
+      title: "Développeur polyvalent et créateur tech",
+      description:
+        "Développement et design UI/UX pour des solutions innovantes",
+    },
+    {
+      date_start: "2022",
+      date_end: "2023",
+      title: "Développeur polyvalent et créateur tech",
+      description:
+        "Développement et design UI/UX pour des solutions innovantes",
+    },
+    {
+      date_start: "2022",
+      date_end: "2023",
+      title: "Développeur polyvalent et créateur tech",
+      description:
+        "Développement et design UI/UX pour des solutions innovantes",
+    },
+    {
+      date_start: "2022",
+      date_end: "2023",
+      title: "Développeur polyvalent et créateur tech",
+      description:
+        "Développement et design UI/UX pour des solutions innovantes",
+    },
+    {
+      date_start: "2022",
+      date_end: "2023",
+      title: "Développeur polyvalent et créateur tech",
+      description:
+        "Développement et design UI/UX pour des solutions innovantes",
+    },
+    {
+      date_start: "2022",
+      date_end: "2023",
+      title: "Développeur polyvalent et créateur tech",
+      description:
+        "Développement et design UI/UX pour des solutions innovantes",
+    },
+    {
+      date_start: "2022",
+      date_end: "2023",
+      title: "Développeur polyvalent et créateur tech",
+      description:
+        "Développement et design UI/UX pour des solutions innovantes",
+    },
+  ];
+  return (
+    <section className="section__education section-page">
+      <div className="education__timeline_container">
+        <TitleBox title="Education" />
+        <TimeLine data={education} />
+      </div>
+      <div className="experience__timeline_container">
+        <TitleBox title="Expérience" />
+        <TimeLine data={experience} />
+      </div>
+    </section>
+  );
+};
 export default function AboutPage() {
   return (
     <main className="page-view" id="AboutPage">
@@ -78,6 +172,7 @@ export default function AboutPage() {
       <section className="content-page">
         <MyInfosProfile />
         <SkillsSections />
+        <SectionEductaion />
       </section>
     </main>
   );
