@@ -37,7 +37,6 @@ const NavBar = () => {
       <h1 className="title-website">NORBERT.DEV</h1>
       <NavMenu></NavMenu>
       <div className="copyright-section-nav">
-        <p className="text-copy"> Copyright (c) 2024 Norbert.Dev</p>
         <span>
           Designed by
           <a href="www.google.com"> Norbert Yemuang Bope</a>

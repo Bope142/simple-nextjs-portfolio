@@ -4,9 +4,9 @@
 .btn {
   border: none;
   outline: none;
-  padding: 20px 30px;
+  padding: 12px 30px;
   font-family: $fontRegular;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   position: relative;
   &::after {
     content: "";
@@ -30,4 +30,13 @@
 .btn-black {
   background: black;
   color: white;
+}
+
+.btn-white {
+  background: white;
+  color: black;
+}
+
+.btn-small {
+  padding: 15px !important;
 }

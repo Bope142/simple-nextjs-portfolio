@@ -1,0 +1,47 @@
+@import "../../public/style/reset.scss";
+@import "../../public/style/variable.scss";
+
+#ServicePage {
+  display: flex;
+  flex-direction: column;
+  padding-top: $padding;
+  & .content-page {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.section-service {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.service__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  row-gap: 45px;
+  & p {
+    font-family: $fontMedium;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: white;
+    text-align: center;
+  }
+}
+
+.service__pricing {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.content__pricing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}

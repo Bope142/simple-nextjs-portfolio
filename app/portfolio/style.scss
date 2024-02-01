@@ -1,0 +1,18 @@
+@import "../../public/style/reset.scss";
+@import "../../public/style/variable.scss";
+
+#PortfolioPage {
+  display: flex;
+  flex-direction: column;
+  padding-top: $padding;
+  & .content-page {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.section__project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
