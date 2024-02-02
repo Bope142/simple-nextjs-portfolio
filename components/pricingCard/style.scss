@@ -1,0 +1,66 @@
+@import "../../public/style/reset.scss";
+@import "../../public/style/variable.scss";
+
+.pricing__card {
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background: white;
+  row-gap: 25px;
+  & .price {
+    display: flex;
+    & p {
+      font-family: $fontMedium;
+      font-size: 2.5rem;
+      color: $neutral2;
+      text-transform: uppercase;
+    }
+    & em {
+      align-self: flex-end;
+      font-family: $fontMedium;
+    }
+  }
+  & .type__price {
+    font-family: $fontMedium;
+    font-size: 1rem;
+    color: $neutral2;
+    opacity: 0.5;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.164);
+  }
+  & .list-option-pack {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    & .items {
+      font-family: $fontRegular;
+      font-size: 0.8rem;
+      color: $neutral2;
+      opacity: 0.5;
+    }
+    & .valid {
+      opacity: 1;
+    }
+  }
+  & .btn {
+    align-self: flex-start;
+  }
+}
+
+.popular {
+  position: relative;
+  &::after {
+    content: "Popular";
+    background: black;
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: $fontRegular;
+    font-size: 0.8rem;
+    right: 10%;
+    top: -5%;
+  }
+}

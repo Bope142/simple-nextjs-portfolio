@@ -1,0 +1,80 @@
+@import "../../public/style/reset.scss";
+@import "../../public/style/variable.scss";
+
+.navbar-menu-container {
+  position: relative;
+  background: white;
+  // height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 50px;
+  padding: 100px;
+  overflow: hidden;
+  z-index: 500;
+  // box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  & h1 {
+    font-family: $fontBold;
+    font-size: 2rem;
+    color: $neutral2;
+  }
+
+  & .copyright-section-nav {
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    & .text-copy {
+      font-family: $fontRegular;
+      font-size: 0.8rem;
+      color: $neutral1;
+      transition: all 0.3s linear;
+    }
+    & span {
+      font-size: 0.8rem;
+      color: $neutral1;
+      opacity: 1;
+      font-family: $fontRegular;
+      & a {
+        font-family: $fontRegular;
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: $neutral2 !important;
+        opacity: 0.8;
+        transition: all 0.3s linear;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.activeLink {
+  color: $neutral2 !important;
+}
+
+.navbar__nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+
+  & .nav-item {
+    font-family: $fontRegular;
+    text-decoration: none;
+    font-size: 1rem;
+    color: $neutral1;
+    transition: all 0.3s linear;
+    text-transform: uppercase;
+    &:hover {
+      color: $neutral2 !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar-menu-container {
+    display: none;
+  }
+}

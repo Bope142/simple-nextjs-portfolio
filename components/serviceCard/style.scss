@@ -1,0 +1,80 @@
+@import "../../public/style/reset.scss";
+@import "../../public/style/variable.scss";
+.card__service {
+  padding: 30px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  position: relative;
+  overflow: hidden;
+}
+.card__service:hover {
+  & .link-readmore {
+    transform: translateX(0%) !important;
+
+    &::after {
+      content: "";
+      width: 30px;
+      transition: all 0.3s linear;
+    }
+    & .link-readmore-service {
+      margin-right: 10px;
+      transition: all 0.1s linear;
+      transition-delay: 0.05s;
+    }
+  }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  overflow: hidden;
+  & .card__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.034);
+    border-radius: 50%;
+    flex: none;
+    height: 70px;
+    width: 70px;
+    font-family: $fontBold;
+    font-size: 0.9rem;
+  }
+
+  & .card__title {
+    font-family: $fontBold;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+  & .card__overview {
+    font-family: $fontRegular;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    opacity: 0.8;
+  }
+  & .link-readmore {
+    display: flex;
+    align-items: center;
+    transform: translateX(-55%) !important;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    &::after {
+      content: "";
+      height: 1px;
+      width: 50px;
+      background: rgb(0, 0, 0);
+      transition: all 0.3s linear;
+    }
+    & .link-readmore-service {
+      font-family: $fontRegular;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: black;
+      opacity: 1;
+      font-size: 0.8rem;
+      margin-right: 0;
+      transition: all 0.3s linear;
+      transition-delay: 0.3s;
+    }
+  }
+}

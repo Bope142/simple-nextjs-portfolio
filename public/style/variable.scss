@@ -1,0 +1,27 @@
+/*Export fonts */
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+
+/*fonts varialble*/
+$fontBold: "Poppins-Bold", sans-serif;
+
+$fontMedium: "Poppins-Medium", sans-serif;
+
+$fontRegular: "Poppins-Regular", sans-serif;
+
+$padding: 50px;
+
+$neutral1: rgba(0, 0, 0, 0.378);
+$neutral2: #080808;

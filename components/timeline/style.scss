@@ -1,0 +1,60 @@
+@import "../../public/style/reset.scss";
+@import "../../public/style/variable.scss";
+
+.timeline__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.items-timeline {
+  padding: 0 20px 100px 20px;
+  border-left: 2px solid rgba(black, 1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &::after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: rgb(0, 0, 0);
+    // border-radius: 50%;
+    position: absolute;
+    left: -0.1%;
+    top: 0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  & .date__infos {
+    display: flex;
+    flex: none;
+    padding: 10px 25px;
+    border-radius: 2.5rem;
+    background: rgb(255, 255, 255);
+    font-family: $fontRegular;
+    font-size: 0.8rem;
+    color: rgba(24, 22, 22, 0.788);
+    align-items: center;
+  }
+  & .infos__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: end;
+    align-items: flex-end;
+    & .title {
+      font-family: $fontBold;
+      font-size: 0.9rem;
+      text-align: right;
+      line-height: 1.3rem;
+    }
+    & .description-items {
+      font-family: $fontRegular;
+      font-size: 0.8rem;
+      align-self: flex-end;
+      text-align: right;
+      line-height: 1.2rem;
+      opacity: 0.8;
+    }
+  }
+}

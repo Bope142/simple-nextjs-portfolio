@@ -1,0 +1,21 @@
+@import "../../public/style/reset.scss";
+@import "../../public/style/variable.scss";
+
+#ContactPage {
+  display: flex;
+  flex-direction: column;
+  padding-top: $padding;
+  & .content-page {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  & .btn {
+    align-self: flex-start;
+  }
+}

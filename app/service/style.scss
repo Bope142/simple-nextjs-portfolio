@@ -1,0 +1,81 @@
+@import "../../public/style/reset.scss";
+@import "../../public/style/variable.scss";
+
+#ServicePage {
+  display: flex;
+  flex-direction: column;
+  padding-top: $padding;
+  & .content-page {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.section-service {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.service__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: black url("/images/project-4.jpg") center/cover;
+  padding-top: 200px !important;
+  padding-bottom: 200px !important;
+  row-gap: 45px;
+  position: relative;
+  &::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  & p {
+    font-family: $fontMedium;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: white;
+    text-align: center;
+    z-index: 5;
+  }
+  & .btn {
+    z-index: 5;
+  }
+}
+
+.service__pricing {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.content__pricing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .section-service {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .content__pricing {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .content__pricing {
+    padding-bottom: 180px !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .section-service,
+  .content__pricing {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

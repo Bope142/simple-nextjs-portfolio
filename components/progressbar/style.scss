@@ -1,0 +1,29 @@
+@import "../../public/style/reset.scss";
+@import "../../public/style/variable.scss";
+
+.progressbar__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
+  & .progessbar__infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & .title,
+    .value {
+      font-family: $fontRegular;
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+  }
+  & .progressbar {
+    height: 3px;
+    flex: none;
+    background: rgba(black, 0.07);
+    & .progession {
+      background: black;
+      height: 100%;
+    }
+  }
+}

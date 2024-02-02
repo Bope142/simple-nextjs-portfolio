@@ -1,0 +1,58 @@
+@import "../../public/style/reset.scss";
+@import "../../public/style/variable.scss";
+
+.tabbar__container {
+  display: none;
+  align-items: center;
+  position: fixed;
+  bottom: 3%;
+  width: 85%;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 15px;
+  border-radius: 2.5rem;
+  justify-content: space-between;
+}
+
+.tabbar-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  text-decoration: none;
+  width: 15px;
+  overflow: hidden;
+  border-radius: 2.5rem;
+  column-gap: 15px;
+  transition: all 0.5s linear;
+  & * {
+    transition: all 0.5s linear;
+  }
+  & .icons {
+    flex: none;
+    height: 15px;
+    width: 15px;
+    fill: rgba(0, 0, 0, 0.327);
+  }
+  & p {
+    flex: none;
+    font-family: $fontRegular;
+    font-size: 0.8rem;
+    color: white;
+  }
+}
+
+.active-menu {
+  width: 100px;
+  background: black;
+  & .icons {
+    fill: rgb(255, 255, 255);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .tabbar__container {
+    display: flex;
+  }
+}

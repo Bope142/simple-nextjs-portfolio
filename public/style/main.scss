@@ -1,0 +1,60 @@
+@import "./variable.scss";
+@import "./reset.scss";
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+* {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: $fontRegular;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  // -ms-overflow-style: none;
+  // /* IE and Edge */
+  // scrollbar-width: none;
+}
+
+// body::-webkit-scrollbar {
+//   display: none;
+// }
+
+.container {
+  display: flex;
+  background: #faf9f9;
+  position: relative;
+
+  overflow: hidden;
+  height: 100vh;
+}
+
+.page-view {
+  background: transparent;
+  width: 100%;
+  height: 100% !important;
+}
+
+.section-page {
+  padding: $padding;
+}
+.div-animation {
+  display: flex;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  // background: red;
+}
+@media only screen and (max-width: 1000px) {
+  $padding: 20px;
+  .section-page {
+    padding: $padding !important;
+  }
+
+  .page-view {
+    padding-bottom: 80px !important;
+  }
+}
