@@ -51,7 +51,8 @@
 .profil-infos {
   & h3 {
     font-family: $fontBold;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
     color: $neutral2;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -102,4 +103,14 @@
   display: flex;
   flex-direction: column;
   row-gap: 45px;
+}
+
+@media only screen and (max-width: 800px) {
+  .skills__section,
+  .section__education {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section__education {
+    padding-bottom: 180px !important;
+  }
 }

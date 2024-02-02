@@ -13,7 +13,7 @@ body {
   font-family: $fontRegular;
   position: relative;
   height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
   // -ms-overflow-style: none;
   // /* IE and Edge */
   // scrollbar-width: none;
@@ -34,12 +34,27 @@ body {
 
 .page-view {
   background: transparent;
-
-  overflow-x: hidden;
   width: 100%;
-  height: auto;
+  height: 100% !important;
 }
 
 .section-page {
   padding: $padding;
+}
+.div-animation {
+  display: flex;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  // background: red;
+}
+@media only screen and (max-width: 1000px) {
+  $padding: 20px;
+  .section-page {
+    padding: $padding !important;
+  }
+
+  .page-view {
+    padding-bottom: 80px !important;
+  }
 }

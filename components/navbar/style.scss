@@ -72,3 +72,9 @@
     }
   }
 }
+
+@media only screen and (max-width: 1200px) {
+  .navbar-menu-container {
+    display: none;
+  }
+}

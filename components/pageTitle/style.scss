@@ -42,3 +42,15 @@
   color: $neutral2;
   text-transform: uppercase;
 }
+
+@media only screen and (max-width: 1000px) {
+  $padding: 20px;
+  .page__header__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-bottom: 50px;
+    flex: none;
+    margin-left: $padding;
+  }
+}

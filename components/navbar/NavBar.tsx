@@ -1,7 +1,6 @@
 "use client";
 import "./style.scss";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
