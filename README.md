@@ -6,7 +6,7 @@ Discover a straightforward portfolio crafted with Next.js😊😊🫡
 
 ## Demo
 
-You can check out the live demo [here](https://quote-hub-omega.vercel.app/).
+You can check out the live demo [here](https://simple-nextjs-portfolio-alpha.vercel.app/).
 
 ## Technologies Used
 
